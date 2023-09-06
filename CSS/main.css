@@ -1,19 +1,122 @@
-h1 {
-    color: green;
-}
-
-h2 {
-    color: green;
-}
-
-#economia h2 {
-    color: gold;
-}
-
-.dataDeCriacao {
-    color: #ccc;
-}
-
 * {
-    color: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: rgb(41, 43, 49);
+    padding: 16px 0;
+    color: rgb(235, 233, 233);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: rgb(235, 233, 233);
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.artigos article img {
+    width: 100%;
+}
+
+.artigos article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.artigos article h2 {
+    margin-bottom: 16px;
+}
+
+.artigos article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.artigos article a {
+    background-color: rgb(58, 66, 66);
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.artigos article a:hover {
+    text-decoration: underline;
+}
+
+.artigos article p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.artigos article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#esportes {
+    background-color: rgb(220, 252, 220);
+}
+
+#esportes .artigos article a {
+    background-color: green;
+}
+
+#economia {
+    background-color: rgb(255, 255, 202);
+}
+
+#economia .artigos article a {
+    background-color: rgb(255, 174, 0);
+}
+
+#jogos {
+    background-color: rgb(255, 181, 181);
+}
+
+#jogos .artigos article a {
+    background-color: rgb(247, 123, 85);
+}
+
+#tecnologia {
+    background-color: rgb(229, 229, 254);
+}
+
+#tecnologia .artigos article a {
+    background-color: rgb(85, 142, 247);
 }
